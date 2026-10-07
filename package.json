@@ -1,0 +1,26 @@
+{
+  "name": "caresync",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "npm run dev -w @caresync/api",
+    "dev:web": "npm run dev -w @caresync/web",
+    "build": "npm run build -w @caresync/shared && npm run build -w @caresync/api && npm run build -w @caresync/web",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:push": "npm run db:push -w @caresync/api",
+    "db:generate": "npm run db:generate -w @caresync/api",
+    "db:migrate": "npm run db:migrate -w @caresync/api",
+    "db:seed": "npm run db:seed -w @caresync/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -53,7 +53,7 @@ export function LoginPage() {
         data.user.role as PortalRole,
         data.refreshToken
       );
-      nav("/");
+      nav("/app");
     } catch {
       setError("Network error — is the API running on port 4000?");
     } finally {

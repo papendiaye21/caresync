@@ -32,7 +32,7 @@ export function AuthCallbackPage() {
         data.auth.role as PortalRole,
         refresh
       );
-      nav("/", { replace: true });
+      nav("/app", { replace: true });
     })();
   }, [params, nav]);
 

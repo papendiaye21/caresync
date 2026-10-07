@@ -3,6 +3,7 @@ import { RequireAuth } from "./pages/RequireAuth";
 import { LoginPage } from "./pages/LoginPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { AuthCallbackPage } from "./pages/AuthCallbackPage";
+import { PortfolioPage } from "./pages/PortfolioPage";
 import { HomeRedirect } from "./pages/HomeRedirect";
 import { RequirePatientRole } from "./pages/RequirePatientRole";
 import { RequireClinicRole } from "./pages/RequireClinicRole";
@@ -40,8 +41,9 @@ export function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/auth/callback" element={<AuthCallbackPage />} />
+      <Route path="/" element={<PortfolioPage />} />
       <Route
-        path="/"
+        path="/app"
         element={
           <RequireAuth>
             <HomeRedirect />

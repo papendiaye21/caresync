@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pape Ndiaye — Portfolio</title>
+<meta name="description" content="Pape Ndiaye, Computer Science student at the University of Rhode Island. Full-stack, AI, security and mobile projects.">
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--accent:#38bdf8}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1000px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;flex-wrap:wrap;gap:.5rem}
+nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0}
+header.hero{padding:4rem 0 3rem}
+.hero h1{font-size:clamp(2rem,6vw,3.5rem);margin:0 0 .25rem}
+.hero .headline{color:var(--accent);font-size:1.2rem;margin:0 0 1rem}
+.hero p.lead{max-width:680px;color:var(--muted);font-size:1.05rem}
+.btn{display:inline-block;margin:.5rem .5rem 0 0;padding:.6rem 1.1rem;border-radius:8px;border:1px solid var(--accent);font-weight:600}
+.btn.primary{background:var(--accent);color:var(--bg)}
+section{padding:2.5rem 0}
+h2{font-size:1.6rem;margin:0 0 1rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.card{background:var(--card);border-radius:12px;padding:1.25rem;display:flex;flex-direction:column;gap:.5rem;border:1px solid #334155}
+.card h3{margin:0}
+.card p{margin:0;color:var(--muted);flex:1}
+.tag{align-self:flex-start;font-size:.8rem;padding:.1rem .6rem;border-radius:999px;background:#0b3a53;color:var(--accent)}
+.skills{display:flex;flex-wrap:wrap;gap:.5rem}
+.skills span{background:var(--card);border:1px solid #334155;padding:.3rem .8rem;border-radius:999px;font-size:.9rem}
+footer{padding:2rem 0;color:var(--muted);text-align:center;border-top:1px solid #334155;margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><strong>Pape Ndiaye</strong>
+<ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+
+<header class="hero">
+<h1>Pape Ndiaye</h1>
+<p class="headline">Computer Science Student · Full-Stack &amp; AI Developer</p>
+<p class="lead">I'm a Computer Science student at the University of Rhode Island (graduating December 2027) who enjoys building full-stack products, AI and agent tooling, and secure, database-backed applications.</p>
+<a class="btn primary" href="#projects">View projects</a>
+<a class="btn" href="https://github.com/papendiaye21">GitHub</a>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<p>My strengths span full-stack development, AI and agent work, security, and databases, using Python, JavaScript, TypeScript and Dart. My experience includes the Handshake AI Fellowship, building healthcare SaaS, a full-stack running tracker, and tooling for an AI desktop app. Serving in the Rhode Island Army National Guard has shaped my leadership and discipline, which I bring to every team and project.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<article class="card"><span class="tag">TypeScript</span><h3>caresync</h3><p>Caresync clinic platform: a multi-tenant healthcare SaaS with an API and web app for appointments, patients, encounters and prescriptions.</p><a href="https://github.com/papendiaye21/caresync">View repository →</a></article>
+<article class="card"><span class="tag">Full-stack</span><h3>allRunners</h3><p>Full-stack running tracker for logging and reviewing runs.</p><a href="https://github.com/papendiaye21/allRunners">View repository →</a></article>
+<article class="card"><span class="tag">Dart / Flutter</span><h3>todo</h3><p>A Flutter to-do application written in Dart.</p><a href="https://github.com/papendiaye21/todo">View repository →</a></article>
+<article class="card"><span class="tag">Dart</span><h3>flutter-calculator</h3><p>A calculator app built with Dart and Flutter.</p><a href="https://github.com/papendiaye21/flutter-calculator">View repository →</a></article>
+<article class="card"><span class="tag">ML / Notebook</span><h3>diamond-price-prediction</h3><p>Machine-learning project that predicts diamond prices, developed in a notebook.</p><a href="https://github.com/papendiaye21/diamond-price-prediction">View repository →</a></article>
+<article class="card"><span class="tag">Repository</span><h3>PN</h3><p>A personal repository (no description provided).</p><a href="https://github.com/papendiaye21/PN">View repository →</a></article>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills &amp; Tech Stack</h2>
+<div class="skills">
+<span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Dart</span><span>Flutter</span><span>React</span><span>Node.js</span><span>SQL / Databases</span><span>AI &amp; Agents</span><span>Security</span><span>Git</span>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Find me on <a href="https://github.com/papendiaye21">GitHub</a>.</p>
+</section>
+</div>
+<footer>© Pape Ndiaye</footer>
+</body>
+</html>
